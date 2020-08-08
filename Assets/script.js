@@ -111,7 +111,7 @@ var priorCities = [];
 
 function renderButtons() {
 
-    // Deleting the city buttons prior to adding new movie buttons
+    // Deleting the city buttons prior to adding new city buttons
     // (this is necessary otherwise we will have repeat buttons)
     $("#priorSearches").empty();
 
@@ -137,8 +137,9 @@ function renderButtons() {
 renderButtons();
 
     function renderLocalStorage(){
-        priorCities = JSON.parse(localStorage.getItem("search"));
-        if (priorCities){
+        var cities = JSON.parse(localStorage.getItem("search"));
+        if (cities){
+            priorCities = cities;
             renderButtons();
         }
     }
