@@ -1,15 +1,15 @@
 ###  Server-Side APIs: Weather Dashboard
 
-Link to app: 
 This app retrieves data from the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. This app runs in the browser, uses localStorage, and features dynamically updated HTML and CSS.
-```
+
+Link to app: https://adamwjones.github.io/Weather-Dashboard/
 
 ## User Story
 
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
-```
+
 
 ## Acceptance Criteria
 
@@ -21,7 +21,6 @@ GIVEN a weather dashboard with form inputs
 * (Complete) WHEN I view future weather conditions for that city, THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
 * (Complete) WHEN I click on a city in the search history, THEN I am again presented with current and future conditions for that city
 * (Complete) WHEN I open the weather dashboard, THEN I am presented with the last searched city forecast
-```
-## Screenshot
 
+## Screenshot:
 <img src="Assets/Images/weather-dashboard.png" width="400px"> 

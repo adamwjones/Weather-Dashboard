@@ -1,11 +1,5 @@
-//I have 2 issues still... remaining: 
 
-//1) It stopped rendering buttons
-//2) Local storage is creating duplicate buttons 
-
-//Current Weather, Five Day, and UV 
 $('#citySearchBtn').on("click", displayWeather);
-//$(".city").on("click", displayWeather);
 $(document).on("click", ".city", makeBtnWork);
 
 function displayWeather(){
