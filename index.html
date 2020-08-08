@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Weather Dashboard</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS CDN  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+        <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+        <!-- Link to CSS File -->
+        <link rel="stylesheet" href="Assets/style.css">
+
+        <!-- Style to fix the issue of text extending past card length ///NOT SURE IF I NEED THIS OR NOT /// -->
+        <style>
+
+        
+        </style>
+    </head> 
+    <body>
+    <!-- Jumbotron for Title -->
+        <nav class="jumbotron" style="background-color: #20315A ; color: white;">
+            <h1 class="text-center">
+                <strong>
+                <i class="fa fa-cloud" aria-hidden="true"></i>Weather Dashboard</strong>
+            </h1>
+        </nav>
+        <!-- Container for Main Body -->     
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Search Box -->
+                <div class="col-4 bg-light">
+                        <h3 class="mb-0 text-dark">Search:</h3>
+                        <div class="input-group">
+                            <input id="cityID" type="text" class="form-control" placeholder="It's always sunny in...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="citySearchBtn">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                            <!-- Table for prior searches --> 
+
+                        <div class="list-group mb-3">
+                            <div id="priorSearches"></div>
+                        </div>
+                </div>
+                        <!-- Container for Current Searched City and 5 Day Forcast-->
+                <div class="col-8">
+                    <!-- Section for Current searched city-->
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <h3 class="mb-0 text-dark">Weather for:<span class="date"></span></h3>
+                            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <!-- Retrieved data will be dumped here -->
+                                    <div class="crrCity"></div>
+                                    <div class="icon"></div>
+                                    <div class="wind"></div>
+                                    <div class="humidity"></div>
+                                    <div class="tempF"></div>
+                                    <div class="uv"></div>
+                                    <div class="uvRisk"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mb-0 text-dark">5-Day Forcast:</h3>
+                    <!-- Dynamic HTML Section for 5 Day Forcast-->
+                    <div class="col-md-9">                        
+                        <div class="container" id="fiveDay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery JS -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="Assets/script.js"></script>
+    </body>

@@ -1,0 +1,23 @@
+.day {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.dayBox {
+    box-sizing: border-box;
+    margin: 3px;
+    width: 50%;
+}
+
+.dayCard {
+    background-color: #20315A; 
+    color: white;
+}
+
+.city {
+    background-color: #20315A; 
+    color: white;
+    margin: 5px;
+}
